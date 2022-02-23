@@ -1,4 +1,9 @@
-@import url('http://fonts.cdnfonts.com/css/baginda');
+@font-face {
+    font-family: 'Baginda';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Baginda'), url('https://fonts.cdnfonts.com/s/30612/Baginda.woff') format('woff');
+}
 
 .botao {
     width: 180px;
