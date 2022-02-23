@@ -61,10 +61,12 @@ var cron;
 var minutoIncial;
 let segundoInicial;
 function iniciarTimer(){
-    minutoIncial = minutes
-    segundoInicial = seconds
-    numeroQuestoes = document.getElementById('entradaQuestoes').value == '' ? 1 : document.getElementById('entradaQuestoes').value
-    cron = setInterval(() => {timer()}, 1000)
+    if (rodando == false){
+        minutoIncial = minutes
+        segundoInicial = seconds
+        numeroQuestoes = document.getElementById('entradaQuestoes').value == '' ? 1 : document.getElementById('entradaQuestoes').value
+        cron = setInterval(() => {timer()}, 1000)
+    }
 }
 var rodando = false
 var cronPausa;
