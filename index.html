@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id ="divTempoQ">
+        <p id="textoQuestaoT">Tempo por questão</p>
+    </div>
+    <div class="tempo">
+        <div id="imagem2" onclick="diminuirTempo()">
+        </div>
+        <p id="textoTempo">03:00</p>
+        <div id="imagem" onclick="aumentarTempo()">
+        </div>
+    </div>
+    <div class="questao">
+        <p id="textoQuestao">
+            Número de questões:
+        </p>
+        <input type="number" name="" id="entradaQuestoes">
+    </div> 
+    <div id="botoesTimer">
+        <button class="botaoTimer" onclick="iniciarTimer()">INICIAR TIMER</button>
+        <button class="botaoTimer" onclick="terminarQuestao()">PRÓXIMA QUESTÃO</button>
+        <button class="botaoTimer" onclick="pausarTimer()">PAUSAR TIMER</button>
+        <button class="botaoTimer" onclick="resumeTimer()">PLAY TIMER</button>
+    </div>
+    <audio src="media/119139685.mp3" id="audio">
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    <audio src="media/89098762.mp3" id="audioFim">
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    
+</body>
+</html>

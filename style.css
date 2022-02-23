@@ -1,0 +1,116 @@
+@import url('http://fonts.cdnfonts.com/css/baginda');
+
+.botao {
+    width: 180px;
+    height: 28px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #FFD32D;
+    transition-duration: 0.1s;
+    text-align: center;
+    font-family: 'Baginda', sans-serif;
+    font-size: large;
+}
+.botao:hover{
+    cursor: pointer;
+    border: 1px solid black ;
+}
+#divBotoes {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh; /* height of the browser viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#divBotao {
+    margin-top: 2vh;
+}
+body{
+    background: rgb(8,69,148);
+    background: linear-gradient(90deg, rgba(8,69,148,1) 0%, rgba(8,94,125,1) 35%, rgba(0,142,137,1) 65%, rgba(255,211,45,1) 100%);
+}
+#imagem{
+    background-image: url('img/nada.svg');
+    height: 39px;
+    width: 39px;
+}
+#imagem:hover{
+    background-image: url('img/borda.svg');
+    cursor: pointer;
+}
+.tempo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    height: 50px;
+}
+#imagem2{
+    background-image: url('img/nada2.svg');
+    height: 39px;
+    width: 39px;
+}
+#imagem2:hover{
+    background-image: url('img/borda2.svg');
+    cursor: pointer;
+}
+#textoTempo{
+    font-family: 'Baginda', sans-serif;
+    font-size: 350%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#entradaQuestoes{
+    font-family: 'Baginda', sans-serif;
+    font-size: 120%;
+    width: 40px;
+    margin-left: 0.5vw;
+}
+.questao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#textoQuestao{
+    font-family: 'Baginda', sans-serif;
+    font-size: 150%;
+}
+#divAlinhar{
+    display: flex;
+    align-items: center;
+}
+.botaoTimer {
+    width: 120px;
+    height: 28px;
+    border-radius: 8px;
+    border: 0px;
+    margin: 0.2%;
+    background-color: #FFD32D;
+    transition-duration: 0.1s;
+    text-align: center;
+    font-family: 'Baginda', sans-serif;
+    font-size: large;
+}
+.botaoTimer:hover{
+    cursor: pointer;
+    border: 1px solid black ;
+}
+#botoesTimer{
+    display: flex;
+    justify-content: center;
+}
+#textoQuestaoT{
+    font-family: 'Baginda', sans-serif;
+    font-size: 150%;
+}
+#divTempoQ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 600px) {
+    .botaoTimer{
+        height: 40px;
+    }
+  }
